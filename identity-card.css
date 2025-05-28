@@ -1,0 +1,110 @@
+.container{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:100em;
+    left: 200em;
+    border:0.1em transparent ;
+    border-radius: 8em;
+    height: 100em;
+    width: 56.25em;
+    overflow: hidden;
+    box-shadow: 10em;
+    box-shadow: rgb(221, 219, 219) 10px 10px 20px;
+}
+.container-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.glassmorph{
+    position: absolute;
+    bottom: 0;
+    left: 0em;
+    border: 0.00em solid #ffffff;
+    border-radius:8em;
+    box-shadow: 0 0 5.5em 1.5em  #00000096;
+    opacity: 100%;
+    width: 100%;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(1em);
+    -webkit-backdrop-filter: blur(1em);
+    z-index: 1;
+}
+.crossbox{
+    position: absolute;
+    height:7em;
+    width:7em;
+    top: 4.5em;
+    right:4.5em;
+    border:0em transparent;
+    border-radius: 7em;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(1em);
+    -webkit-backdrop-filter: blur(1em);
+    z-index: 1;
+    box-shadow: 0 0 1.5em .5em  #867d8b7e;
+    cursor: pointer;
+}
+
+.crossbox::before,
+.crossbox::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3em;
+    height: 0.3em;
+    background-color: white;
+    background: rgba(255, 255, 255, 0.477);
+    backdrop-filter: blur(1em);
+    -webkit-backdrop-filter: blur(1em);
+    z-index: 1;
+    box-shadow: 0 0 1.5em .5em  #867d8b7e;
+    transform-origin: center;
+}
+
+.crossbox::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.crossbox::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.card-heading{
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    position: absolute;
+    top: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 7em;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+    margin: 0;
+    text-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
+    -webkit-text-stroke: 0.1px #000000;
+    
+}
+.quoting{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    position: absolute;
+    top: 13.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    z-index: 2;
+    margin: 0;
+    text-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
+}
